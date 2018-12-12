@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="zh-Hans">
+<html class="theme-next muse use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -96,9 +96,9 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Gemini',
+    scheme: 'Muse',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -237,7 +237,7 @@
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="进击的菜鸟">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/touxiang.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
@@ -303,9 +303,8 @@
       
         
           
-          
-title：Hadoop中NM获得Container资源使用情况的源码分析前言本篇文章所分析的Hadoop源码主要是基于hadoop-3.0.0-beta1-src这个版本，其他版本可能略有不同，但主体代码偏差不大（当然，Hadoop 1.0版本除外，毕竟1.0版本还没有YARN平台）。
-源代码分
+          Hadoop中NM获得Container资源使用情况的源码分析
+前言本篇文章所分析的Hadoop源码主要是基于hadoop-3.0.0-beta1-src这个版本，其他版本可能略有不同，但主体代码偏差不大（当然，Hadoop 1.0版本除外，毕竟1.0版本还没有YARN平台）。源代码分析在源码文件 
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -382,6 +381,8 @@ title：Hadoop中NM获得Container资源使用情况的源码分析前言本篇�
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image" src="/images/touxiang.jpg" alt="进击的菜鸟">
+            
               <p class="site-author-name" itemprop="name">进击的菜鸟</p>
               <p class="site-description motion-element" itemprop="description">Stay Hungry,Stay Foolish</p>
           </div>
@@ -452,7 +453,7 @@ title：Hadoop中NM获得Container资源使用情况的源码分析前言本篇�
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
 
 
 
@@ -551,13 +552,6 @@ title：Hadoop中NM获得Container资源使用情况的源码分析前言本篇�
 
   
   
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
 
   
 
